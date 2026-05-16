@@ -1,1 +1,36 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-s) var(--spacing-m);
+  border-radius: var(--border-radius-pill);
+  border: 2px solid transparent;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  white-space: nowrap;
+}
 
+.btn:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.btn:focus,
+.btn:focus-visible {
+  outline: none;
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary);
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  background-color: var(--color-grey);
+  cursor: not-allowed;
+  pointer-events: none;
+}
