@@ -34,3 +34,23 @@
   cursor: not-allowed;
   pointer-events: none;
 }
+
+.page-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--dot-gap);
+}
+
+.page-indicator__dot {
+  width: var(--dot-size);
+  height: var(--dot-size);
+  border-radius: 50%;
+  background-color: var(--dot-color-inactive);
+  flex-shrink: 0;
+  transition: background-color 0.2s ease;
+}
+
+.page-indicator__dot--active {
+  background-color: var(--dot-color-active);
+}
+
